@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -8,17 +8,25 @@
     <link rel="icon" href="/the-end.png" type="image/x-icon">
     <style>
         body {
-            max-width: 60rem; /* Adjusted */
+            max-width: 60rem;
+            /* Adjusted */
             margin: 0 auto;
-            padding: 2.5rem; /* Adjusted */
-            font-size: 17px; /* Adjusted */
+            padding: 2.5rem;
+            /* Adjusted */
+            font-size: 17px;
+            /* Adjusted */
             font-weight: 400;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            line-height: 1.7; /* Adjusted */
-            background-color: #f5f5f7; /* Adjusted */
-            color: #1d1d1f; /* Apple standard dark text color */
-            -webkit-font-smoothing: antialiased; /* Added */
-            -moz-osx-font-smoothing: grayscale; /* Added */
+            line-height: 1.7;
+            /* Adjusted */
+            background-color: #f5f5f7;
+            /* Adjusted */
+            color: #1d1d1f;
+            /* Apple standard dark text color */
+            -webkit-font-smoothing: antialiased;
+            /* Added */
+            -moz-osx-font-smoothing: grayscale;
+            /* Added */
         }
 
         b {
@@ -27,28 +35,41 @@
 
         code {
             display: inline-block;
-            background-color: rgba(120, 120, 128, 0.12); /* Adjusted */
-            padding: 0.2em 0.4em; /* Adjusted */
+            background-color: rgba(120, 120, 128, 0.12);
+            /* Adjusted */
+            padding: 0.2em 0.4em;
+            /* Adjusted */
             border-radius: 6px;
             font-size: 0.9em;
-            color: #1d1d1f; /* Adjusted */
-            font-family: "SF Mono", "Menlo", "Consolas", "Courier New", monospace; /* Added */
+            color: #1d1d1f;
+            /* Adjusted */
+            font-family: "SF Mono", "Menlo", "Consolas", "Courier New", monospace;
+            /* Added */
         }
 
         .messages-container {
-            margin-top: 2.5rem; /* Adjusted */
-            margin-bottom: 2.5rem; /* Adjusted */
+            margin-top: 2.5rem;
+            /* Adjusted */
+            margin-bottom: 2.5rem;
+            /* Adjusted */
             background-color: #ffffff;
-            border: 1px solid rgba(0,0,0,0.1); /* Adjusted */
-            padding: 2rem; /* Adjusted */
-            border-radius: 12px; /* Adjusted */
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Adjusted */
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            /* Adjusted */
+            padding: 2rem;
+            /* Adjusted */
+            border-radius: 12px;
+            /* Adjusted */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            /* Adjusted */
         }
 
         .message-entry {
-            padding-bottom: 1.25rem; /* Adjusted */
-            margin-bottom: 1.25rem; /* Adjusted */
-            border-bottom: 1px solid rgba(0,0,0,0.08); /* Adjusted */
+            padding-bottom: 1.25rem;
+            /* Adjusted */
+            margin-bottom: 1.25rem;
+            /* Adjusted */
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            /* Adjusted */
         }
 
         .message-entry:last-child {
@@ -58,42 +79,56 @@
         }
 
         .message-entry p {
-            margin: 0 0 0.6rem 0; /* Adjusted */
-            line-height: 1.65; /* Adjusted */
+            margin: 0 0 0.6rem 0;
+            /* Adjusted */
+            line-height: 1.65;
+            /* Adjusted */
         }
 
         .message-entry .timestamp {
-            font-size: 0.82em; /* Adjusted */
-            color: #636366; /* Adjusted */
+            font-size: 0.82em;
+            /* Adjusted */
+            color: #636366;
+            /* Adjusted */
         }
 
         footer {
-            border-top: 1px solid rgba(0,0,0,0.1); /* Adjusted */
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            /* Adjusted */
             text-align: center;
         }
-        
-        footer p { /* Updated styles for the main text block in the footer */
-            font-size: 0.9em; /* Slightly reduced font size */
-            color: #555555; /* Slightly lighter color to de-emphasize */
-            border-radius: 0; /* Removed border-radius as background is gone */
-            margin-left: auto; 
-            margin-right: auto; 
-            max-width: 90%; 
-            text-align: left; 
+
+        footer p {
+            /* Updated styles for the main text block in the footer */
+            font-size: 0.9em;
+            /* Slightly reduced font size */
+            color: #555555;
+            /* Slightly lighter color to de-emphasize */
+            border-radius: 0;
+            /* Removed border-radius as background is gone */
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 90%;
+            text-align: left;
         }
 
         footer small {
-            font-size: 0.82em; /* Adjusted */
-            color: #636366; /* Adjusted */
+            font-size: 0.82em;
+            /* Adjusted */
+            color: #636366;
+            /* Adjusted */
         }
 
         .icon {
-            width: 4rem; /* Adjusted */
-            height: 4rem; /* Adjusted */
+            width: 4rem;
+            /* Adjusted */
+            height: 4rem;
+            /* Adjusted */
             display: block;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 1.5rem; /* Adjusted */
+            margin-bottom: 1.5rem;
+            /* Adjusted */
         }
 
         a {
@@ -112,36 +147,48 @@
             }
 
             code {
-                background-color: rgba(120, 120, 128, 0.24); /* Adjusted */
-                color: #f5f5f7; /* Adjusted */
+                background-color: rgba(120, 120, 128, 0.24);
+                /* Adjusted */
+                color: #f5f5f7;
+                /* Adjusted */
             }
 
             .messages-container {
                 background-color: #2c2c2e;
-                border-color: rgba(255,255,255,0.15); /* Adjusted */
-                box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Adjusted */
+                border-color: rgba(255, 255, 255, 0.15);
+                /* Adjusted */
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                /* Adjusted */
             }
 
             .message-entry {
-                border-bottom-color: rgba(255,255,255,0.12); /* Adjusted */
+                border-bottom-color: rgba(255, 255, 255, 0.12);
+                /* Adjusted */
             }
 
             .message-entry .timestamp {
-                color: #8e8e93; /* Apple dark secondary text */
+                color: #8e8e93;
+                /* Apple dark secondary text */
             }
 
             footer {
-                border-top-color: rgba(255,255,255,0.15); /* Adjusted */
+                border-top-color: rgba(255, 255, 255, 0.15);
+                /* Adjusted */
             }
-            
-            footer p { /* Updated dark mode styles for the main text block in the footer */
-                 color: #aaaaaa; /* Lighter color for dark mode de-emphasis */
-                 /* background-color: #2c2c2e; */ /* Removed background */
-                 /* box-shadow: 0 4px 12px rgba(0,0,0,0.18); */ /* Removed box-shadow */
+
+            footer p {
+                /* Updated dark mode styles for the main text block in the footer */
+                color: #aaaaaa;
+                /* Lighter color for dark mode de-emphasis */
+                /* background-color: #2c2c2e; */
+                /* Removed background */
+                /* box-shadow: 0 4px 12px rgba(0,0,0,0.18); */
+                /* Removed box-shadow */
             }
 
             footer small {
-                color: #8e8e93; /* Apple dark secondary text */
+                color: #8e8e93;
+                /* Apple dark secondary text */
             }
 
             a {
@@ -159,12 +206,16 @@
     <img class="icon" src="/the-end.png">
     <div class="messages-container">
         <div class="message-entry">
-            <p>Web Never Die，<a href="https://lkssite.vip/" target="_blank">LKs 网站推荐合集</a>，把 monica PRM 的 fork 删了，感觉没那么多亲密关系，没那么多人的生日需要记录，经常联系的人并不多，打消了给 monica 加农历支持，搭建了记录身边人生日的想法。</p>
+            <p>Web Never Die，<a href="https://lkssite.vip/" target="_blank">LKs 网站推荐合集</a>，把 monica PRM 的 fork
+                删了，感觉没那么多亲密关系，没那么多人的生日需要记录，经常联系的人并不多，打消了给 monica 加农历支持，搭建了记录身边人生日的想法。</p><br>
+            用 Copilot 重新设计了下 yii，平常可以留点言。
             <div class="timestamp">2025 年 05 月 10 日</div>
         </div>
     </div>
     <footer>
-        <p><b>年纪大了</b>，拥有的东西越来越多，难以割舍的也越来越多。你的线上资产（域名、加密货币），微信支付宝、银行、股票账户。如何在你离开后，让这些资产有序地交接给你的家人？<i>慢慢要考虑这个问题了。</i>配置好你的线上平台、密码管理器的信任联系人。为你的家人留下一份线上的<b>资产清单</b>。域名多<b>续费</b>几年，给他们时间学习如何处理。接下来的时间考虑如何 <code>好好生活</code></p>
+        <p><b>年纪大了</b>，拥有的东西越来越多，难以割舍的也越来越多。你的线上资产（域名、加密货币），微信支付宝、银行、股票账户。如何在你离开后，让这些资产有序地交接给你的家人？<i>慢慢要考虑这个问题了。</i>配置好你的线上平台、密码管理器的信任联系人。为你的家人留下一份线上的<b>资产清单</b>。域名多<b>续费</b>几年，给他们时间学习如何处理。接下来的时间考虑如何
+            <code>好好生活</code>
+        </p>
         <small>2024 年 10 月 06 日&nbsp;&copy;&nbsp;<a href="https://lifelonglearn.ing">奶爸 · 终身学习</a></small>
     </footer>
 </body>
